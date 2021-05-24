@@ -1,13 +1,30 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
-    <title th:text="'Hello ' + ${title}" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
+    <meta charset="UTF-8">
+    <title>About</title>
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">About</h4>
+                        <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">Contact</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                            <li><a href="#" class="text-white">Like on Facebook</a></li>
+                            <li><a href="#" class="text-white">Email me</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="navbar navbar-dark bg-dark shadow-sm">
             <div class="container">
                 <a href="/" class="navbar-brand d-flex align-items-center">
@@ -23,9 +40,9 @@
 </head>
 <body>
 <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-    <p class="fs-5 text-muted" th:text="'   Привет,  '+ ${title} +' from resources/templates!'" />
+    <p class="fs-5 text-muted" th:text="'   Привет,  '+ ${about} +'!'" />
 </div>
-
+    <p  />
 </body>
 <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <div class="row">
